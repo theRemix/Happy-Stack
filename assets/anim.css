@@ -1,0 +1,75 @@
+body {
+  overflow: hidden;
+}
+
+.container{
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+}
+
+.earth, .moon{
+  border: 0.5vw solid #6fd2e8;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 9vw;
+  text-align: center;
+  display: inline-block;
+
+}
+
+.earth span, .moon span{
+  font-family: "Helvetica", sans-serif;
+  color: #6fd2e8;
+  font-weight: 700;
+  line-height: 15vw;
+  font-size: 2vw;
+}
+
+.distance{
+  border-top: 0.3vw dashed #AAA;
+  margin: 0 1vw;
+  display: inline-block;
+  width: 0;
+  transform: translateY(1.8vw);
+
+  transition: width 0.4s ease-out;
+  animation-duration: 6s;
+  animation-name: distance;
+  animation-fill-mode: forwards;
+}
+
+.distance-label{
+  font-family: "Helvetica", sans-serif;
+  color: #898989;
+  font-weight: 700;
+  font-size: 3vw;
+  text-align: center;
+
+  display: block;
+  width: 100%;
+  transform: translateY(-5vw);
+}
+
+.moon{
+  border-color: #AAA;
+  width: 8vw;
+  height: 8vw;
+
+}
+
+.moon span{
+  color: #AAA;
+  line-height: 8vw;
+}
+
+@keyframes distance {
+  from {
+    width: 8vw;
+  }
+
+  to {
+    width: 49vw;
+  }
+}
+
