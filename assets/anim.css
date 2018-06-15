@@ -5,6 +5,7 @@ body {
 .container{
   width: 80vw;
   margin: auto;
+  margin-top: 10vw;
   text-align: center;
 }
 
@@ -33,8 +34,7 @@ body {
   width: 0;
   transform: translateY(1.8vw);
 
-  transition: width 0.4s ease-out;
-  animation-duration: 6s;
+  animation-duration: 5s;
   animation-name: distance;
   animation-fill-mode: forwards;
 }
@@ -71,5 +71,20 @@ body {
   to {
     width: 49vw;
   }
+}
+
+
+.monster-pop{
+  position: absolute;
+  right: 20vw;
+  width: 34vw;
+  bottom: -100%;
+
+  transition: bottom 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transition: bottom 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.monster-pop-up{
+  bottom: -2vw;
 }
 
